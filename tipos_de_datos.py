@@ -5,17 +5,20 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
-
+var1 = data.split('\n',1);
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
-
+apellidos = var1[0]
+decimales = var1[1]
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
-
+apellidos = ''.join(apellidos)
+apellidos_list = apellidos.split(',')
+print(apellidos_list)
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
