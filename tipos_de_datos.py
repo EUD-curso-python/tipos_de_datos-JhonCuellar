@@ -109,10 +109,12 @@ apellidos_set1 = set(apellidos_list[56:67])
 
 apellidos_set2 = set(apellidos_list[62:77])
 
+print(apellidos_set1)
+
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
-apellidos_set1.add(apellidos_list[68])
+apellidos_set1.add(apellidos_list[67])
 print(apellidos_set1)
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
@@ -120,6 +122,7 @@ variable `apellidos_list`.
 """
 apellidos_set1.update(apellidos_list[68:71])
 print(apellidos_list[68:71])
+print(apellidos_set1)
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
@@ -128,18 +131,18 @@ apellidos_set1.remove(' CAMPOS  ')
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
 """
-apellidos_set3 =set(apellidos_set1) & set(apellidos_set2)
+apellidos_set3 = apellidos_set1 & apellidos_set2
 
 """Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
 `apellidos_set2`.
 """
-apellidos_set4 =set(apellidos_set1) | set(apellidos_set2)
+apellidos_set4 = apellidos_set1 | apellidos_set2
 
 
 """Crear la variable `apellidos_set5` con la diferencia de `apellidos_set1` menos 
 `apellidos_set2`.
 """
-apellidos_set5 =set(apellidos_set1) - set(apellidos_set2)
+apellidos_set5 = apellidos_set1 - apellidos_set2
 
 """Crear la variable `apellidos_set5` con la diferencia simétrica entre 
 `apellidos_set1` y `apellidos_set2`.
@@ -150,7 +153,7 @@ apellidos_set5 = set(apellidos_set1) ^ set(apellidos_set2)
 """Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
 es un subconjunto de `apellidos_set1`.
 """
-var3 = apellidos_set1.issubset(apellidos_set3)
+var3 = apellidos_set3.issubset(apellidos_set1)
 
 """Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
 del 0 al 4 de la lista `apellidos_lista`.
